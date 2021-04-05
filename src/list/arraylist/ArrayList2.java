@@ -2,14 +2,11 @@ package list.arraylist;
 
 import list.AbstractList;
 
-@SuppressWarnings("unchecked")
-
 /**
  * 有动态缩容操作
- * @author MJ Lee
- *
- * @param <E>
+ * @author wangyz
  */
+@SuppressWarnings("unchecked")
 public class ArrayList2<E> extends AbstractList<E> {
 	/**
 	 * 所有的元素
