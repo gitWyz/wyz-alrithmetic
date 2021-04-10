@@ -1,13 +1,15 @@
-package list.arraylist;
+package com.wyz;
+
+import com.wyz.list.arraylist.ArrayList;
 
 /**
  * @author wangyz
  * @version 1.0
  * @date 2021/4/5
  */
-public class TestArrayList {
+public class Test {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList list = new ArrayList();
         list.add(100);
         list.add(101);
         list.add(102);

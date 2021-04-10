@@ -1,6 +1,5 @@
-package utils;
+package com.wyz.utils;
 
-import java.text.SimpleDateFormat;
 import java.util.Objects;
 
 /**

@@ -1,4 +1,4 @@
-package list;
+package com.wyz.list;
 
 /**
  * @author wangyz

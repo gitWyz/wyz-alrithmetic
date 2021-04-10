@@ -1,4 +1,4 @@
-package fibonacci;
+package com.wyz.fibonacci;
 
 /**
  * 斐波那契

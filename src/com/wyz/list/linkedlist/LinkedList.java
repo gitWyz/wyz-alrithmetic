@@ -1,4 +1,4 @@
-package list.linkedlist;
+package com.wyz.list.linkedlist;
 
 /**
  * @author wangyz
