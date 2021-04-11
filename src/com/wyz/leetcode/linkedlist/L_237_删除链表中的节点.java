@@ -25,10 +25,11 @@ public class L_237_删除链表中的节点 {
 
     public static void main(String[] args) {
         L_237_删除链表中的节点 l = new L_237_删除链表中的节点();
-        // 下面3行模拟链表添加3个节点
+        // 下面3行模拟链表添加4个节点 4 -> 5 -> 1 -> 9 -> null
         ListNode listNode = new ListNode(4);
         listNode.next = new ListNode(5);
-        listNode.next.next = new ListNode(9);
+        listNode.next.next = new ListNode(1);
+        listNode.next.next.next = new ListNode(9);
         // 删除5这个节点
         // 注意：不能删除最后一个节点（题目要求）
         l.deleteNode(listNode.next);
