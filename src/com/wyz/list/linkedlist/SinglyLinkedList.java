@@ -64,8 +64,9 @@ public class SinglyLinkedList<E> extends AbstractList<E> {
      */
     @Override
     public E set(int index, E element) {
-        E oldElement = node(index).element;
-        node(index).element = element;
+        Node<E> node = node(index);
+        E oldElement = node.element;
+        node.element = element;
         return oldElement;
     }
 
@@ -166,9 +167,10 @@ public class SinglyLinkedList<E> extends AbstractList<E> {
         singlyLinkedList.add(2);
         singlyLinkedList.add(null);
         singlyLinkedList.add(3);
-        singlyLinkedList.clear();
+        //singlyLinkedList.clear();
         //System.out.println(singlyLinkedList.remove(1));
         //System.out.println(singlyLinkedList.indexOf(null));
         System.out.println(singlyLinkedList);
+        System.out.println(singlyLinkedList.get(0));
     }
 }

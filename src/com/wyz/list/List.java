@@ -67,7 +67,7 @@ public interface List<E> {
     E remove(int index);
 
     /**
-     * 查看元素的索引
+     * 查看元素在此列表首次出现的索引，如果没有返回-1
      * @param element
      * @return
      */
