@@ -39,6 +39,30 @@ public class L_206_反转链表 {
         return newHead;
     }
 
+    /**
+     * javadoc reverseList2
+     * @apiNote 方法一： 迭代反转链表
+     *
+     * @param head
+     * @return com.wyz.leetcode.linkedlist.ListNode
+     * @author wangyz
+     * @date 2021-04-11 20:59:00
+     */
+    public ListNode reverseList2(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode newHead = null;
+        while (head != null) {
+            ListNode temp = head.next;
+            head.next = newHead;
+            newHead = head;
+            head = temp;
+            System.out.println(newHead);
+        }
+        return newHead;
+    }
+
     public static void main(String[] args) {
         L_206_反转链表 l = new L_206_反转链表();
         // 下面3行模拟链表添加5个节点: 1 -> 2 -> 3 -> 4 -> 5 -> null
@@ -50,6 +74,7 @@ public class L_206_反转链表 {
 
         //l.reverseList1(listNode);
         //System.out.println(listNode);
-        System.out.println("反转结果："+l.reverseList1(listNode));
+        //System.out.println("方法一：反转结果："+l.reverseList1(listNode));
+        System.out.println("方法二：反转结果："+l.reverseList2(listNode));
     }
 }
