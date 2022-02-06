@@ -34,7 +34,20 @@ public class InsertionSort {
         return arr;
     }
 
+    public static int[] insertionSort2(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int cur = i;
+            while (cur>0 && arr[cur] < arr[cur-1]) {
+                int temp = arr[cur];
+                arr[cur] = arr[cur-1];
+                arr[cur-1] = temp;
+                cur--;
+            }
+        }
+        return arr;
+    }
+
     public static void main(String[] args) {
-        PrintUtil.print(insertionSort(new int[]{5, 8, 2, 1, 9}));
+        PrintUtil.print(insertionSort2(new int[]{5, 8, 2, 1, 9}));
     }
 }
