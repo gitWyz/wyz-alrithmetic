@@ -1,6 +1,8 @@
 package com.wyz.sort;
 
 
+import com.wyz.utils.PrintUtil;
+
 /**
  * 冒泡排序
  * @author yzw
@@ -22,9 +24,6 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] ints = {4, 3, 9, 1, 7};
-        int[] ints1 = bubbleSort(ints);
-        for (int j : ints1) {
-            System.out.println(j);
-        }
+        PrintUtil.print(bubbleSort(ints));
     }
 }
