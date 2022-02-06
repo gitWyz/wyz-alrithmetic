@@ -11,7 +11,7 @@ public class Test {
 
     public static int cuttingRope(int n) {
         int min = n/3;
-
+        return min;
     }
 
     public static void main(String[] args) {
