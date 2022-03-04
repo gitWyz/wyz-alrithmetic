@@ -1,7 +1,5 @@
 package com.wyz;
 
-import com.wyz.list.arraylist.ArrayList;
-
 /**
  * @author wangyz
  * @version 1.0
